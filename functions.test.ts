@@ -7,6 +7,20 @@ import { createDocumentRegistry } from "typescript"
 
 const {shuffleArray} = require('./utils')
 
+
+const array = [1,2,3,4,5]
+
+    test('shufflArray returns same length as array',
+     () => {
+     expect(shuffleArray(array)).toHaveLength(array.length)}),
+    
+        test('shuffleArray returns a length of 4 elements.', 
+        () => {
+            expect((shuffleArray.length)).toHaveReturnedWith(4);}
+         
+         )
+     
+
 require('./utils')
 
 require('chromedriver')
@@ -24,19 +38,4 @@ beforeEach(async () => {
   
 })
 
-let array = [1,2,3,4,5]
-
-describe('shuffleArray test', () => {
-    test('shuffleArray is not equal to array', 
-    async () => {
-     expect(shuffleArray).not.toBe(ARRAY)}
-     
-     )}),
-     describe('shuffleArray test', () => {
-        test('shuffleArray returns shuffled aray', 
-        async () => {
-            expect(shuffleArray).toHaveReturnedWith(4);}
-         
-         )})
-     
 
